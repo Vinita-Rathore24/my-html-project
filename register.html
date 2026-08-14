@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+       background-color: #FCE4EC;
+       font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+      background-color: #FCE4EC;
+      color: rgb(10, 7, 7);
+      text-align: center;
+      padding: 15px;
+      }
+
+      section {
+      background-color: #FCE4EC;
+      width: 600px;
+      margin: 15px auto;
+      padding: 20px;
+     }
+
+     button {
+     background-color: #6f5674;
+     color: white;
+     padding: 8px 15px;
+     margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Registration Form</h1>
+  </header>
+  <main>
+    <section>
+      <form>
+        <label for="firstname">Student Name:</label>
+         <input type="text" id="firstname" name="firstname" placeholder="First Name">
+         <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+        <br><br>
+        <label for="rollnum">Roll no. :</label>
+        <input type="text" id="rollnum" name="rollnum">
+        <br><br>
+        <label for="father">Father Name :</label>
+        <input type="text" id="father" name="father">
+        <br><br>
+        <label for="dob">Date of Birth :</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+        <label>Gender :</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br> <br>
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course">
+        
+        <option value="Web Development">Web Development</option>
+        <option value="Moblile App Development">Mobile App Development</option>
+        <option value="Machine Learning">Machine Learning</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        </select>
+        <br><br>
+         <label for="dept">Department :</label>
+        <input type="checkbox" id="dept" name="IT" value="IT">
+        <label for="IT">IT</label>
+        <input type="checkbox" id="Civil" name="dept" value="Civil">
+        <label for="Civil">Civil</label>
+        <input type="checkbox" id="Mech" name="dept" value="Mech">
+        <label for="Mech">Mech</label> 
+        <input type="checkbox" id="CSE" name="dept" value="CSE">
+        <label for="CSE">CSE</label> 
+        <input type="checkbox" id="ECE" name="dept" value="ECE">
+        <label for="ECE">ECE</label>
+        <br><br>
+        <label for="mobile"> Mobile No. :</label>
+        <input type="tel" id="mobile" name="mobile"
+                maxlength="10"
+                pattern="[0-9] {10}">
+        <br><br>
+        <label for="Photo">Photo :</label>
+        <input type="file" id="photo" name="photo">
+        <br><br>
+        <label for="city">City :</label>
+        <input type="text" id="city" name="city">
+        <br><br>
+        <label for="address">Address :</label>
+        <textarea id="address" name="address"></textarea>
+        <br><br>
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>  
+</body>
+</html>
